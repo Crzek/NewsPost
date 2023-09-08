@@ -1,0 +1,6 @@
+[MASTER]
+disable = missing-docstring,too-few-public-methods
+ignore = wsgi.py
+ignore-patterns = ^[0-9]{4}_.*
+generated-members=objects,DoesNotExist,id,pk,_meta,base_fields,context
+const-rgx=(([A-Z_][A-Z0-9_]*)|(__.*__)|register|urlpatterns)$

@@ -1,0 +1,15 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.box {
+    padding: 1em;
+    border: 1px solid black;
+    color: black;
+    border-radius: 20px;
+    background-color: cadetblue;
+    text-decoration: none;
+}

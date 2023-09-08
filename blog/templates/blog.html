@@ -1,0 +1,22 @@
+{% extends "header.html" %}
+{# Your code here #}
+{% block title %}
+News
+{% endblock title %}
+
+{% block content %}
+
+    <div class="flex">
+        {% for art in articles %} 
+            <a href="{% url 'blog:post' article_id=art.id  %}" class="box">
+                <div >
+                    <h2>{{art.id}}</h2>
+                    <h3>{{art.title}}</h3>
+                    <h5>Date (DD-MM-YYYY):{{date.day}}-{{date.month}}-{{date.year}}</h5>
+                    <p>{{art.description}}</p>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+
+{% endblock content %}
