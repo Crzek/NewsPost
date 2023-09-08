@@ -74,12 +74,6 @@ def index(request):
     return render(request, "blog.html", context=context)
 
 
-def add_post(request):
-    # Your code here
-    context = {}
-    return render(request, "add_post.html", context)
-
-
 def post(request, article_id):
     if POST:
         article = POST[article_id]
@@ -94,3 +88,9 @@ def post(request, article_id):
             "article": article,
             "date": datetime.date.today()
         })
+
+
+def add_post(request):
+    # Your code here
+    context = {}
+    return render(request, "add_post.html", context)
